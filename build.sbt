@@ -4,7 +4,7 @@ lazy val core = project.in(file("."))
       name := "bank"
     )
 
-val vaultV = "0.0.2"
+val vaultV = "0.0.3"
 val specs2V = "4.3.5"
 
 val kindProjectorV = "0.9.8"
