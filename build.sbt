@@ -4,7 +4,7 @@ lazy val core = project.in(file("."))
       name := "bank"
     )
 
-val vaultV = "0.0.4"
+val vaultV = "0.1.0"
 val specs2V = "4.3.6"
 
 val kindProjectorV = "0.9.9"
@@ -24,7 +24,7 @@ onLoad in Global := { s =>
 lazy val commonSettings = Seq(
   organization := "io.chrisdavenport",
 
-  scalaVersion := "2.12.7",
+  scalaVersion := "2.12.8",
   crossScalaVersions := Seq(scalaVersion.value, "2.11.12"),
   scalacOptions += "-Yrangepos",
 
