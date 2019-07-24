@@ -1,5 +1,6 @@
 lazy val core = project
   .in(file("."))
+  .disablePlugins(MimaPlugin)
   .settings(commonSettings, releaseSettings)
   .settings(
     name := "bank"
@@ -140,6 +141,7 @@ lazy val mimaSettings = {
   lazy val extraVersions: Set[String] = Set()
 
   Seq(
+    mimaFailOnNoPrevious := false,
     mimaFailOnProblem := mimaVersions(version.value).toList.headOption.isDefined,
     mimaPreviousArtifacts := (mimaVersions(version.value) ++ extraVersions)
       .filterNot(excludedVersions.contains(_))
