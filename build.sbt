@@ -10,7 +10,7 @@ val catsEffectV = "1.3.1"
 val vaultV = "1.0.0"
 val specs2V = "4.5.1"
 
-val kindProjectorV = "0.9.9"
+val kindProjectorV = "0.10.0"
 val betterMonadicForV = "0.3.0-M4"
 
 
@@ -26,7 +26,7 @@ lazy val commonSettings = Seq(
   crossScalaVersions := Seq(scalaVersion.value, "2.11.12"),
   scalacOptions += "-Yrangepos",
 
-  addCompilerPlugin("org.spire-math" % "kind-projector" % kindProjectorV cross CrossVersion.binary),
+  addCompilerPlugin("org.typelevel" % "kind-projector" % kindProjectorV cross CrossVersion.binary),
   addCompilerPlugin("com.olegpy" %% "better-monadic-for" % betterMonadicForV),
   libraryDependencies ++= Seq(
     "org.typelevel"               %% "cats-core"                  % catsV,
