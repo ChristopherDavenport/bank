@@ -5,7 +5,7 @@ lazy val core = project
     name := "bank"
   )
 
-val catsV = "1.6.1"
+val catsV = "2.0.0"
 val catsEffectV = "1.3.1"
 val vaultV = "1.0.0"
 val specs2V = "4.5.1"
