@@ -10,7 +10,7 @@ val catsEffectV = "1.3.1"
 val vaultV = "1.0.0"
 val specs2V = "4.5.1"
 
-val kindProjectorV = "0.9.9"
+val kindProjectorV = "0.9.10"
 val betterMonadicForV = "0.3.0-M4"
 
 
