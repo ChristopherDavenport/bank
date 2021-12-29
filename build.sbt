@@ -75,7 +75,7 @@ lazy val releaseSettings = {
           password
         )
     ).toSeq,
-    publishArtifact in Test := false,
+    (Test / publishArtifact) := false,
     releasePublishArtifactsAction := PgpKeys.publishSigned.value,
     scmInfo := Some(
       ScmInfo(
@@ -156,7 +156,7 @@ lazy val mimaSettings = {
 }
 
 lazy val skipOnPublishSettings = Seq(
-  skip in publish := true,
+  (publish / skip) := true,
   publish := (()),
   publishLocal := (()),
   publishArtifact := false,
